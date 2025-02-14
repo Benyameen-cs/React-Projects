@@ -1,20 +1,33 @@
 import TodoHeading from "./assets/components/TodoHeading"
 import TodoInputs from "./assets/components/TodoInputs"
-import Items1 from "./assets/components/Items1"
-import Items2 from "./assets/components/Items2"
+import TodoItems from "./assets/components/TodoItems";
 import './assets/app.css';
 
 
 function App() {
   
+  let tasks = [
+    {
+      Name : "buy milk",
+      date : "13/2/2025",
+    },
+    {
+      Name : "go to college",
+      date : "14/2/2025",
+    },
+    {
+      Name: "like the video",
+      date : "13/5/2022",
+    }
+  ]
+
 
   return (
     <center>
       <div className="todoApp-container">
         <TodoHeading></TodoHeading>
         <TodoInputs></TodoInputs>
-        <Items1></Items1>
-        <Items2></Items2>
+        <TodoItems data = {tasks}></TodoItems>
       </div>
     </center>
   )

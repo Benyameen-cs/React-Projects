@@ -1,15 +1,13 @@
-function Items1(){
 
-  let inputText = "buy milk" ;
-  let inputDate = "13/2/2025";
+function DisplayTodoItems({taskIs , dateIs}){
 
-    return <div class="container text-center">
+  return <div class="container text-center">
     <div class="row items-container1">
       <div class="col-sm-6 items">
-        {inputText}      
+        {taskIs}
       </div>
       <div class="col-sm-4 items">
-        {inputDate}
+        {dateIs}
       </div>
       <div class="col-sm-2">
         <button type="button" class="btn btn-danger">delete</button>
@@ -18,4 +16,4 @@ function Items1(){
   </div>
 }
 
-export default Items1;
+export default DisplayTodoItems;
