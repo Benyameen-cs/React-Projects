@@ -6,8 +6,9 @@ function TodoItems ({data}){
 
     return <>
         {data.map((item) =>{
-        return 
+        return <>
             <DisplayTodoItems taskIs = {item.Name}  dateIs = {item.date}></DisplayTodoItems>
+            </>
         })}  
     </>
 
