@@ -1,16 +1,18 @@
 
+import styles from "../styles/DisplayTodoItems.module.css"
+
 function DisplayTodoItems({taskIs , dateIs}){
 
-  return <div class="container text-center">
-    <div class="row items-container1">
-      <div class="col-sm-6 items">
+  return <div className="container text-center">
+    <div className={`row ${ styles["items-container"] }  `}>
+      <div className={` col-sm-6  ${ styles ["items"] } `}>
         {taskIs}
       </div>
-      <div class="col-sm-4 items">
+      <div className={` col-sm-4  ${ styles ["items"] } `} >
         {dateIs}
       </div>
-      <div class="col-sm-2">
-        <button type="button" class="btn btn-danger">delete</button>
+      <div className="col-sm-2">
+        <button type="button" className="btn btn-danger">delete</button>
       </div>
     </div>
   </div>

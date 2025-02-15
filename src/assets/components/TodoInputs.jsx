@@ -1,9 +1,10 @@
 
+import styles from "../styles/TodoInputs.module.css"
 
 function TodoInputs (){
 
   return <div class="container text-centre">
-    <div class="row inputs-container">
+    <div class={ `row  ${styles["inputs-container"]} `}>
       <div class="col-sm-6">
         <input type="text" placeholder="type here"></input>
       </div>

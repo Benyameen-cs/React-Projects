@@ -1,28 +1,9 @@
 
-#todo-heading{
-    font-weight: 700;
-    margin-top:  10px;
-    margin-bottom: 20px;
-}
-
 input{
     width: 100%;
-}
-
-.items{
-    text-align: left;
 }
 
 button{
     width: 80px;
 }
-
-.inputs-container{
-    margin: 20px;
-}
-
-.items-container1{
-    margin :20px;
-}
-
 
