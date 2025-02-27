@@ -1,7 +1,7 @@
 
 import styles from "../styles/DisplayTodoItems.module.css"
 
-function DisplayTodoItems({taskIs , dateIs}){
+function DisplayTodoItems({taskIs , dateIs , deleteItem}){
 
   return <div className="container text-center">
     <div className={`row ${ styles["items-container"] }  `}>
@@ -12,7 +12,7 @@ function DisplayTodoItems({taskIs , dateIs}){
         {dateIs}
       </div>
       <div className="col-sm-2">
-        <button type="button" className="btn btn-danger">delete</button>
+        <button type="button" className="btn btn-danger" onClick={()=> deleteItem(taskIs)}>delete</button>
       </div>
     </div>
   </div>

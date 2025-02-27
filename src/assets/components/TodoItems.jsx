@@ -1,13 +1,12 @@
 import DisplayTodoItems from "./DisplayTodoItems";
 
 
-function TodoItems ({data}){
-    console.log(data) ;
+function TodoItems ({data ,deleteItem}){
 
     return <>
         {data.map((item) =>{
         return <>
-            <DisplayTodoItems taskIs = {item.Name}  dateIs = {item.date}></DisplayTodoItems>
+            <DisplayTodoItems taskIs = {item.Name}  dateIs = {item.date} deleteItem={deleteItem}></DisplayTodoItems>
             </>
         })}  
     </>

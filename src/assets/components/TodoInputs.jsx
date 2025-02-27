@@ -1,18 +1,18 @@
 
 import styles from "../styles/TodoInputs.module.css"
 
-function TodoInputs (){
+function TodoInputs ({getInputTask , getInputDate , updateTasks , inputTask , inputDate}){
 
   return <div class="container text-centre">
     <div class={ `row  ${styles["inputs-container"]} `}>
       <div class="col-sm-6">
-        <input type="text" placeholder="type here"></input>
+        <input type="text" placeholder="Type your task here" value={inputTask} onChange={getInputTask}></input>
       </div>
       <div class="col-sm-4">
-        <input type ="date" ></input>
+        <input type ="date" value={inputDate} onChange={getInputDate}></input>
       </div>
       <div class="col-sm-2">
-        <button type="button" class="btn btn-success">add</button>
+        <button type="button" className="btn btn-success" onClick={updateTasks}>add</button>
       </div>
     </div>
   </div>
