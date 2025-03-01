@@ -1,4 +1,4 @@
-
+import { FaDeleteLeft } from "react-icons/fa6";
 import styles from "../styles/DisplayTodoItems.module.css"
 
 function DisplayTodoItems({taskIs , dateIs , deleteItem}){
@@ -12,7 +12,7 @@ function DisplayTodoItems({taskIs , dateIs , deleteItem}){
         {dateIs}
       </div>
       <div className="col-sm-2">
-        <button type="button" className="btn btn-danger" onClick={()=> deleteItem(taskIs)}>delete</button>
+        <button type="button" className="btn btn-danger" onClick={()=> deleteItem(taskIs)}><FaDeleteLeft /></button>
       </div>
     </div>
   </div>

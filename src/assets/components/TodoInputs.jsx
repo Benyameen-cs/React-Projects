@@ -1,5 +1,6 @@
 
 import styles from "../styles/TodoInputs.module.css"
+import { IoAddCircle } from "react-icons/io5";
 
 function TodoInputs ({getInputTask , getInputDate , updateTasks , inputTask , inputDate}){
 
@@ -12,7 +13,7 @@ function TodoInputs ({getInputTask , getInputDate , updateTasks , inputTask , in
         <input type ="date" value={inputDate} onChange={getInputDate}></input>
       </div>
       <div class="col-sm-2">
-        <button type="button" className="btn btn-success" onClick={updateTasks}>add</button>
+        <button type="button" className="btn btn-success" onClick={updateTasks}><IoAddCircle /></button>
       </div>
     </div>
   </div>
